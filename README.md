@@ -50,8 +50,7 @@ if `opposite_day` is true then the website should show your least favorite foods
 
 ### Part 5: Hints
 To link a stylesheet, in the html file, add the line:
-<link rel="stylesheet" href="static/style.css" 
-      type="text/css"> 
+`<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">`
 
 ### Part 6: Extras
 
