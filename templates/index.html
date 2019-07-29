@@ -1,1 +1,19 @@
 <!-- Put the HTML template for your page here! -->
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+	<title> </title>
+</head>
+
+<body>
+	<h1> my fav food is {{food}}</h1>
+	<p> Well, I don't know if it's the best, but it is yummy.</p>
+	<ul>
+	    {% for food in favfood %}
+	    <li> {{food}} </li>
+	    {% endfor %}
+    </ul>
+
+</body>
+</html>
